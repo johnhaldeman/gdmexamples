@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="container container--g10">
+    <div class="bx--grid">
+        <div class="bx--row">
+            <div class="bx--col-lg-12">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <div class="bx--row">
+            <div class="bx--col-lg-12">
+                <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ partial "metadata.html" . }}
+                
+                <p>{{ .Summary }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</main>
+{{ end }}

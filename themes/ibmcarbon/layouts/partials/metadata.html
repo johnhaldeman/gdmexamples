@@ -1,0 +1,13 @@
+
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+{{ $formattedDate := .PublishDate.Format $dateFormat }}
+{{if not (eq $formattedDate  "Jan 1, 0001") }}
+<time datetime="{{ $dateTime }}">{{ $formattedDate  }}</time>
+{{ end }}
+{{ with .Params.tags }}
+{{ range . }}
+{{ $href := print (absURL "tags/") (urlize .) }}
+<a href="{{ $href }}">{{ . }}</a>
+{{ end }}
+{{ end }}

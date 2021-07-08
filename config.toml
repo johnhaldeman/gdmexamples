@@ -1,0 +1,18 @@
+baseURL = "http://gdmexamples.com/"
+languageCode = "en-us"
+title = "Guardium by Example"
+theme = "ibmcarbon"
+enableInlineShortcodes = true
+[menu]
+  [[menu.main]]
+    name = "Posts by Date"
+    pre = "pen-tool"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts by Topic"
+    pre = "tag"
+    url = "/tags/"
+    weight = 2
+[markup.goldmark.renderer]
+unsafe= true

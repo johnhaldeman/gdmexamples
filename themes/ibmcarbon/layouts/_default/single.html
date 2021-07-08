@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="container container--g10">
+<div class="bx--grid">
+    <div class="bx--row">
+        <div class="bx--col-lg-12">
+            <h1>{{ .Title }}</h1>
+        </div>
+    </div>
+    <div class="bx--row">
+        <div class="bx--col-lg-12">
+            {{ partial "metadata.html" . }}
+        </div>
+    </div>
+    <div class="bx--row">
+        <div class="bx--col-lg-12">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+</main>
+{{ end }}

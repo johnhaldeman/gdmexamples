@@ -1,0 +1,31 @@
+<header class="bx--header" role="banner" aria-label="Guardium by Example" data-header>
+    <a class="bx--header__name" href="/" title="">
+        <span class="bx--header__name--prefix">
+          Guardium
+          &nbsp;
+        </span>
+        by Example
+    </a>
+    <nav class="bx--header__nav" aria-label="Guardium by Example" data-header-nav>
+        <ul class="bx--header__menu-bar" aria-label="Guardium by Example">
+          {{ range .Site.Menus.main }}
+          <li>
+            <a class="bx--header__menu-item" href="{{ .URL }}" tabindex="0">
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+            </a>
+          </li>
+          {{ end }}
+          <li>
+            <a class="bx--header__menu-item" href="/pages/disclaimer/" tabindex="0">
+                Disclaimer
+            </a>
+          </li>
+          <li>
+            <a class="bx--header__menu-item" href="/pages/contributing/" tabindex="0">
+                Contributing/Error Reports
+            </a>
+          </li>
+        </ul>
+    </nav>
+</header>
