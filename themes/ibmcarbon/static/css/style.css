@@ -61,6 +61,21 @@ ul > li::before {
   content: '\002013';
 }
 
+ol {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.16px;
+  margin-left: 2.5rem;
+  list-style: none;
+}
+
+ol > li{
+  list-style-type: decimal;
+}
+
+
+
 
 
 main {

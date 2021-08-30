@@ -2,7 +2,7 @@
 title: "SOX Reporting in Guardium Insights"
 date: 2021-07-03T15:41:13Z
 draft: false
-tags: ["sox", "privileged_user", "data_integrity", "guardium_insights"]
+tags: ["sox", "privileged_user", "data_integrity", "guardium_insights", "reports"]
 ---
 *Author: John Haldeman*
 
